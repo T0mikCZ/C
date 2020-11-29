@@ -2,16 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
+void chessBoard(int length)
+{
+     for (int i = 0; i < length; i++)
+    {
+        for (int j = 0; j < length; j++)
+        {
+            printf("%i", (j+i) % 2);
+        }
+        printf("\n");
+    }
+}
+
 int main()
 {
-    int min = 30;
-    int max = 80;
-
-    srand(time(0));
-
-    int randomNumber = (rand() % (max - min + 1)) + min;
-
-    printf("%i", randomNumber);
-
+    chessBoard(100);
     return 0;
 }

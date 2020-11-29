@@ -2,15 +2,16 @@
 
 int main()
 {
-    int cislo = 2;
-    int mocnina = cislo;
+    printf("%i", mocnina(2,10));
+    return 0;
+}
+
+int mocnina(int cislo, int mocnina)
+{
     printf("1. cislo: %i\n", cislo);
-    
-    for(int i = 1; i <= 9; i++)
+    for(int i = 0; i < 10; i++)
     {
-        cislo *= mocnina;
+        cislo *= 2;
         printf("%i. cislo: %i\n", i+1, cislo);
     }
-
-    return 0;
 }
