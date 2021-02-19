@@ -4,7 +4,7 @@
 int main()
 {
     int coordinate1[] = {5,1};
-    int coordinate2[] = {2,18};
+    int coordinate2[] = {-2,18};
 
     printf("%d", getDistance(coordinate1, coordinate2));
 
